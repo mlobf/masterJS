@@ -1,4 +1,2 @@
-const x = 'Hello World';
-
-console.log(x);
-
+let js = 'amazing';
+if (js === 'amazing') alert('JavaScript is Fun')
