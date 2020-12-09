@@ -6,4 +6,3 @@ console.log(n);
 if (js === 'amazing') console.log('JavaScript is Fun');
 if (js === 'amazing') console.log('JavaScript is Fun');
 if (js === 'amazing') console.log('JavaScript is Fun');
-
