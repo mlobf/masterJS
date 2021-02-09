@@ -7,8 +7,8 @@ if (js === "amazing") console.log("JavaScript is Fun");
 if (js === "amazing") console.log("JavaScript is Fun");
 if (js === "amazing") console.log("JavaScript is Fun");
 
-const func = function name(params) {
+const myFunc = function name(params) {
 	console.log("Teste 1234");
 };
 
-func();
+myFunc();
