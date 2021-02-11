@@ -92,3 +92,48 @@ console.log(x, y);
 const averageAge = (ageJonas + ageSarah) / 2;
 
 console.log(ageJonas, ageSarah, averageAge);
+
+// Learn Node Js
+const daysToCompleteJsMasterCourse = 68 / 4;
+const daysToCompleteJsDataStructures = 22 / 4;
+const daysToCompleteJsAdvanced = 25 / 4;
+
+// Learn Node
+const daysToCompleteNodeMaster = 42 / 4;
+const daysToCompleteNodeMosh = 15 / 4;
+const daysToCompleteNodeComplete = 35 / 4;
+
+// Learn React
+
+const daysToLearnReactNative = 33 / 4;
+const daysToLearnReact = 40 / 4;
+const daysToLearnReactNative1 = 39 / 4;
+
+console.log("   ");
+console.log(
+	"Time to Learn JS  " +
+		(daysToCompleteJsAdvanced +
+			daysToCompleteJsDataStructures +
+			daysToCompleteJsMasterCourse)
+);
+console.log("   ");
+console.log(
+	"Time to Learn Node  " +
+		(daysToCompleteNodeComplete +
+			daysToCompleteNodeMaster +
+			daysToCompleteNodeMosh)
+);
+console.log("   ");
+console.log(
+	"Time to Learn React  " +
+		(daysToLearnReact + daysToLearnReactNative + daysToLearnReactNative1)
+);
+
+
+
+
+
+
+
+
+
