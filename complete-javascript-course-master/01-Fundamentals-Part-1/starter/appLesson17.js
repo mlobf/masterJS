@@ -20,3 +20,9 @@ console.log("A new string ....... \n and other line here too....");
 console.log(`Add a new line without using back slash n...... 
 now this is easier !!!
 Bye bye`);
+
+console.log(` oioioi oio i ooio o io oioi 
+oioiooioi
+oioioioioioi
+oioioioi
+oioioioiio`);
