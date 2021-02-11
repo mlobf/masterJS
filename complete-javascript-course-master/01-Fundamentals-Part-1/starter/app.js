@@ -32,3 +32,16 @@ myFirstJob = "Janitor";
 console.log(typeof myFirstJob);
 
 console.log(typeof null);
+
+// Now how to declare Variables.
+
+const age = 22;
+console.log(age);
+//const age = 33;
+console.log(age);
+
+// As matter of fact, to write a clean code , user first const and let only if is strict necessary.
+// Have as little variables changes/mutations as possible.
+
+meuNome = "marcos";
+console.log(meuNome);
