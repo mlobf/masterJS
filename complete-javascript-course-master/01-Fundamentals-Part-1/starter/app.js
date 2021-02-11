@@ -60,15 +60,15 @@ const lastName = "Filho";
 
 console.log(firstName + " " + lastName);
 
-let x = 15;
-x += 10;
-console.log(x);
+//let x = 15;
+//x += 10;
+//console.log(x);
 
-x++; // means -> x = x + 1
-x--; // means -> x = x - 1
-x--; // means -> x = x - 1
+//x++; // means -> x = x + 1
+//x--; // means -> x = x - 1
+//x--; // means -> x = x - 1
 
-console.log(x);
+//console.log(x);
 
 // Comparison operators
 
@@ -79,3 +79,16 @@ console.log(ageSarah >= 18);
 const resultAgeSarah = ageSarah >= 18;
 
 console.log(resultAgeSarah);
+
+// Lesson 15
+// Operators Precedence
+
+let x, y;
+
+x = y = 25 - 10 - 5;
+
+console.log(x, y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+
+console.log(ageJonas, ageSarah, averageAge);
