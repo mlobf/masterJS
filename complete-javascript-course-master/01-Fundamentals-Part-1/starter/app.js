@@ -24,3 +24,11 @@ let myCurrentJob = "Teacher";
 
 console.log(myCurrentJob);
 console.log(myFirstJob);
+console.log(typeof true);
+console.log(typeof myFirstJob);
+
+myFirstJob = "Janitor";
+
+console.log(typeof myFirstJob);
+
+console.log(typeof null);
