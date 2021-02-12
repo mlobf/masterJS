@@ -25,6 +25,3 @@ console.log(typeof favorite);
 if (favorite == 23) {
 	console.log(`Cool! The number is 23 ${typeof favorite}`);
 }
-
-
-
