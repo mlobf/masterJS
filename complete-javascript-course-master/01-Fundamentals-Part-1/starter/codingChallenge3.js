@@ -33,7 +33,7 @@ let sum = function (list) {
 
 let average = function (list) {
 	const result = sum(list) / list.length;
-	return console.log(result);
+	return result;
 };
 
 // First Challenge.
@@ -48,4 +48,5 @@ const first = function (list1, list2) {
 first(dolphinsData, koalasData);
 // Second Challenge;
 
-
+console.log(average(dolphinsData));
+console.log(average(koalasData));
