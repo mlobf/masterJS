@@ -17,7 +17,7 @@ const tips = [];
 const total = [];
 
 const calcTip = (bill) => (bill >= 50 && bill <= 300 ? 0.15 : 0.2);
-const addToTotal = (bill, tip) => bill + (bill * tip);
+const addToTotal = (bill, tip) => bill + bill * tip;
 
 tips.push(calcTip(testData[0]));
 tips.push(calcTip(testData[1]));
