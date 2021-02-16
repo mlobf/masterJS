@@ -19,13 +19,13 @@ const nameKey = "Name";
 console.log(jonas["first" + nameKey]);
 console.log(jonas["last" + nameKey]);
 
-const interestedIn = prompt(
-	"What do you want to know about Jonas ? Choose between firstName, lastName, age, job,and friends"
-);
+/*const interestedIn = prompt("What do you want to know about Jonas ? Choose between firstName, lastName, age, job,and friends");
+ */
 
-console.log(jonas[`${interestedIn}`]);
+//console.log(jonas[`${interestedIn}`]);
 
 // Hint , undefined happens when someone try to access a property from an object that does not exist.
+/*
 if (jonas[interestedIn]) {
 	console.log(jonas[interestedIn]);
 } else {
@@ -33,7 +33,7 @@ if (jonas[interestedIn]) {
 		"Wrong request! Please choose between fistName, lastName, age,job and friends."
 	);
 }
-
+*/
 jonas.location = "Portugal";
 jonas["twitter"] = "@jonasschmedtman";
 
@@ -41,3 +41,6 @@ console.log(jonas);
 
 // Small Challenge
 // Write Jonas has tree friends and his best friend is called Michel.
+console.log(
+	`${jonas.firstName} has ${jonas.friends.length} friends  and his best friend is called ${jonas.friends[0]}.`
+);
