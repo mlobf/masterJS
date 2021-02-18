@@ -7,7 +7,7 @@ const measureKelvin = function () {
 		value: Number(prompt("Degrees celsius: ")),
 	};
 
-	//	console.log(measurement.value);
+	console.log(measurement.value);
 	//  console.warn(measurement.value);
 	//  console.error(measurement.value);
 	console.table(measurement.value);
@@ -16,4 +16,4 @@ const measureKelvin = function () {
 	return kelvin;
 };
 
-console.log(measureKelvin());
+measureKelvin();
