@@ -1,2 +1,2 @@
 # masterJS
-Almost 100 hours to learn JS as a Pro
+Almost 68 hours to learn JS as a Pro
