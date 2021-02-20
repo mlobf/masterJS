@@ -9,15 +9,21 @@ console.log(document.querySelector('.guess').value);
 test;
 */
 
+// Implement High score  .
+//
+
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let myScore = 20;
+let myHighScore = 0;
 
+// When the button Again is clicked
 document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   document.querySelector('.score').textContent = 20;
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.number').textContent = '?';
   document.querySelector('.guess').value = '';
+  //myScore = 0;
 
   console.log('Clicked!!!!');
 
@@ -25,6 +31,7 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').style.width = '15rem';
 });
 
+// When the button Check is selected
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(typeof guess, guess);
@@ -61,5 +68,10 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.number').textContent = secretNumber;
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
+    // Add the high score
+    if (myScore > myHighScore) {
+      myHighScore = myScore;
+      document.querySelector('.highscore').textContent = myHighScore;
+    }
   }
 });
