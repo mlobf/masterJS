@@ -16,6 +16,13 @@ const closeModal = function () {
   overlay.classList.add('hidden');
 };
 
+const pressEscape = function (esc) {
+  console.log(esc.key);
+  if (esc.key === 'Escape') {
+    closeModal();
+  }
+};
+
 for (let i = 0; i < btnOpenModal.length; i++) {
   btnOpenModal[i].addEventListener('click', openModal);
 }
@@ -24,3 +31,5 @@ for (let i = 0; i < btnOpenModal.length; i++) {
 //    after the Click event, not before.
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', pressEscape);
