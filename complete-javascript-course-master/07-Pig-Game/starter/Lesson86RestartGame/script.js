@@ -21,6 +21,28 @@ let currentScore = 0;
 let activePlayer = 0;
 let playing = true;
 
+const resetGame = function () {
+  scores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
+
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  current0el.textContent = 0;
+  current1el.textContent = 0;
+
+  diceEl.classList.add('hidden');
+
+  player0El.classList.remove('player--winner');
+  player1El.classList.remove('player--winner');
+
+  player0El.classList.add('player--active');
+  player1El.classlist.remove('player--active');
+};
+
+btnNew.addEventListener('click', resetGame);
+
 const switchPlayer = function () {
   // Switch to next player
   document.getElementById(`current--${activePlayer}`).textContent = 0;
