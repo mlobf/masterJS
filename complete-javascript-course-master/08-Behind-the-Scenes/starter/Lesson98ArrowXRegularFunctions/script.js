@@ -29,19 +29,26 @@ const calcAge = birthYear => {
 
 //calcAge(1991);
 
+var firstName = 'Marcos';
+
 const jonas = {
+  firstName: 'Jonas',
   year: 1991,
   calcAge1: function () {
+    console.log(this);
     console.log(2037 - this.year);
+
+    const isMillenial = function () {
+      console.log(this.year >= 1981 && this.year <= 1996);
+      isMillenial();
+    };
+  },
+
+  greet: () => {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
   },
 };
 
+//jonas.greet();
 jonas.calcAge1();
-
-const matilda = {
-  year: 2018,
-};
-
-matilda.calcAge1 = jonas.calcAge1;
-
-matilda.calcAge1();
