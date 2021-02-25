@@ -22,10 +22,9 @@ let activePlayer = 0;
 let playing = true;
 
 const resetGame = function () {
-  scores = [0, 0];
+  //scores = [0, 0];
   currentScore = 0;
   activePlayer = 0;
-  playing = true;
 
   score0El.textContent = 0;
   score1El.textContent = 0;
@@ -38,7 +37,8 @@ const resetGame = function () {
   player1El.classList.remove('player--winner');
 
   player0El.classList.add('player--active');
-  player1El.classlist.remove('player--active');
+  //player1El.classlist.remove('player--active');
+  playing = true;
 };
 
 btnNew.addEventListener('click', resetGame);
@@ -90,6 +90,7 @@ btnHold.addEventListener('click', function () {
       scores[activePlayer];
 
     // 2 Check if players score is at least 100.
+    // The problem is here
     if (scores[activePlayer] >= 10) {
       // Finish the game.
       playing = false;
@@ -97,9 +98,7 @@ btnHold.addEventListener('click', function () {
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
 
-      document
-        .querySelector(`.player--${activePlayer}`)
-        .classList.remove('player--active');
+      document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
 
       diceEl.classList.add('hidden');
     } else {
