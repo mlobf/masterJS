@@ -86,4 +86,5 @@ const player1Final = [...players1, 'Thiago', 'Coutinho', 'Periscickj:'];
 const {
   odd: { team1, x, team2 },
 } = game;
-console.log(odds);
+
+//console.log(odds);
