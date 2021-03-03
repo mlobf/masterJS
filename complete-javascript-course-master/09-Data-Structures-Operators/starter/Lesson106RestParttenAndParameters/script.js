@@ -54,24 +54,25 @@ const restaurant = {
 
 // SPREAD, because in right side of  =
 const arr = [1, 2, ...[3, 4]];
-console.log(arr, 'The Spread');
+//console.log(arr, 'The Spread');
 
 // REST, because they are on LEFT side of  =
 const [a, b, ...others] = [1, 2, 3, 4, 5];
-console.log(a, b, others, 'The REST');
+//console.log(a, b, others, 'The REST');
 
 const [pizza, , risotto, ...otherFood] = [
   ...restaurant.mainMenu,
   ...restaurant.starterMenu,
 ];
 
-console.log(pizza, risotto, otherFood); // The Rest element must be the last element
+//console.log(pizza, risotto, otherFood); // The Rest element must be the last element
 
 // Objects - Selection of the unselect
+console.log('----------------------------');
 const { sat, ...weekdays } = restaurant.openHours;
 console.log(weekdays);
 console.log(sat);
-
+console.log('----------------------------');
 // 2-) Functions.
 
 const add = function (...numbers) {
@@ -80,11 +81,11 @@ const add = function (...numbers) {
   for (let i = 0; i < numbers.length; i++) sum += numbers[i];
   console.log(sum);
 };
-add(111, 11, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2);
+//add(111, 11, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2);
 
 const x = [23, 5, 7]; // Must use spread operator otherwise only strings will return.
-add(...x);
+//add(...x);
 
 // Order Pizza.
-restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
-restaurant.orderPizza('Tomato');
+//restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
+//restaurant.orderPizza('Tomato');

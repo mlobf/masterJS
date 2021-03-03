@@ -92,7 +92,7 @@ const ingredients = [
 
 const newRestaurant = { founderIn: 1898, ...restaurant, founder: 'Guiseppe' };
 const restaurantCopy = { ...restaurant };
-
+/*
 console.log(newRestaurant);
 console.log('----------------------');
 console.log(restaurantCopy);
@@ -101,3 +101,4 @@ restaurantCopy.name = ' Ristorante  Roma';
 
 console.log(restaurantCopy.name, 'The Copy ');
 console.log(restaurant.name, 'The Original');
+*/
