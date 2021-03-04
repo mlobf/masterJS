@@ -11,7 +11,7 @@ const openHours = {
     open: 11,
     close: 23,
   },
-  [`day-${2 + 4}`]: {
+  [weekDays[6]]: {
     open: 0,
     close: 24,
   },
@@ -38,27 +38,27 @@ const restaurant = {
     );
   },
 };
-//console.log('------- BEG +++++++++');
+// ------------------------------------------------------------------------------------------
+// Properties  NAMES
+const properties = Object.keys(openHours);
+//console.log(properties);
 
-//ES2020 Solution
-//console.log(restaurant.openHours.mon?.open); // Only if mon exist, the open property will be touched
+let openStr = `We are open on ${properties.length} days`;
 
-//console.log('+++++++++ END ---------');
-
-const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-
-for (const day of days) {
-  //console.log(day);
-  const open = restaurant.openHours[day]?.open ?? 'closed';
-  //console.log(`On ${day} we open at ${open}`);
+for (const day of Object.keys(openHours)) {
+  openStr += `${day},`;
 }
+//console.log(openStr);
 
-// Using optional chaining on Methods
-//console.log(restaurant.orderDelivery?.(1, 1) ?? 'Method does not exist ');
-//console.log(restaurant.orderRissoto?.(0, 1) ?? 'Method does not exist ');
+// Properties Values
+const values = Object.values(openHours);
+//console.log(values);
 
-// Using even on arrays
-// Check if this arrays is empty
-const users = [{ name: 'Jonas' }, { email: 'hello@gmail.com' }, { age: 38 }];
+//Entire Object
+const entries = Object.entries(openHours);
+//console.log(entries);
 
-console.log(users[0]?.name ?? 'This dude does not exist');
+//Using the key and value method
+for (const [key, { open, close }] of entries) {
+  console.log(`On ${key} we open at ${open} and close at ${close}`);
+}
