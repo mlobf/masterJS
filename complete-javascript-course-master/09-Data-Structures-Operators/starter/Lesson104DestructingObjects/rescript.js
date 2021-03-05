@@ -12,7 +12,7 @@ const restaurant = {
       close: 22,
     },
     fri: {
-      open: 11,
+      open: 1,
       close: 23,
     },
     sat: {
@@ -24,17 +24,43 @@ const restaurant = {
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
+
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 1,
+    time = 0,
+    address,
+  }) {
+    console.log(
+      time,
+      address,
+      this.starterMenu[mainIndex],
+      this.mainMenu[starterIndex]
+    );
+  },
 };
+
+// The Call of orderDelivery with some Obj
+restaurant.orderDelivery({
+  address: 'Via del Sole',
+});
 
 // Mutating Variables on Objects
 let a = 111;
 let b = 999;
 const obj = { a: 23, b: 7, c: 14 };
 ({ a, b } = obj); // Use parenthesis to wrap it.
-console.log(a, b);
+//console.log(a, b);
 
 // Default Values for Objects
 const { menu = [], starterMenu: starter = [] } = restaurant;
+
+// Nested Objects
+// Show open and close only for friday
+const {
+  fri: { open: o, close: c },
+} = restaurant.openHours;
+//console.log(o, c);
 
 //console.log(menu);
 //console.log(starter);
