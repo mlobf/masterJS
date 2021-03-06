@@ -72,7 +72,9 @@ console.log(`Look this my friend ${String(newArr[0]) + String(name)}`);
 // let || const
 // || or  && and
 
+const majority = 18;
+
 const age = 19;
-const drink = age >= 18 ? 'Wine' : 'Water';
+const drink = age >= majority ? 'Wine' : 'Water';
 
 console.log(drink);
