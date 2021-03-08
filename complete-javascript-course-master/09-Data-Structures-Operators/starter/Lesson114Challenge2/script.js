@@ -68,7 +68,7 @@ const game = {
 //    along with the goal number (Example: "Goal 1: Lewandowski")
 const enter = game.scored;
 
-console.log(enter.length);
+//console.log(enter.length);
 for (let i = 0; i < enter.length; i++) {
   //console.log(`Goal ${i}: ${enter[i + 1]}`);
 }
@@ -83,13 +83,11 @@ const odds = Object.values(game.odds);
 let avg = 0;
 for (const odd in odds) avg += odd;
 avg /= odds.length;
-console.log(avg);
-// 3-)
+//console.log(avg);
 
+// 3-)
 for (const [team, odd] of Object.entries(game.odds)) {
   console.log(team, odd);
-  console.log(`Odd of `);
-
-
-
+  //console.log(`Odd of `);
+  console.log(`Odd of victory Bayern Munich: 1.33`);
 }
