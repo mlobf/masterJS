@@ -64,17 +64,17 @@ console.log(undefined || null); // Second is Truthy
 
 console.log(undefined || 0 || '' || 'Hello' || 23 || null); // The First truthy value that appears is Hello.
 */
-console.log('----------------- OR ----------------------');
+//console.log('----------------- OR ----------------------');
 
 //restaurant.numGuests = 23;
 
 const guest1 = restaurant.numGuests ? restaurant.numGuests : 10;
-console.log(guest1);
+//console.log(guest1);
 
 const guest2 = restaurant.numGuests || 10;
-console.log(guest2);
+//console.log(guest2);
 
-console.log('----------------- AND ----------------------');
+//console.log('----------------- AND ----------------------');
 console.log(0 && 'Jonas'); // The and operator && short circuits when the first value is Falsy
 console.log(7 && 'Jonas'); // The AND operator is true only if all operands are true
 console.log('Hello' && 23 && null && 'Jonas');

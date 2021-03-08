@@ -7,6 +7,7 @@ const restaurant = {
   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Cesar Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  numGuests: 0,
   openHours: {
     thu: {
       open: 12,
@@ -52,11 +53,12 @@ const restaurant = {
 
 // NULLISH COALESCING OPERATOR
 
-//restaurant.numGuests = 0;
-const guests = restaurant.numGuests || 10; // Zero is Falsy value
-console.log(guests);
+//let restaurant.numGuests = 10;
+//const guests = restaurant.numGuests || 10; // Zero is Falsy value
+//console.log(guests);
 
 // Nullish: null and undefined
+//const restaurant.numGuests = 100
 const guestCorrect = restaurant.numGuests ?? 10; // Does not work on Node.js
 console.log(guestCorrect);
 

@@ -80,4 +80,5 @@ const {
 
 //console.log(name);
 //console.log(openHours);
+
 //console.log(categories);
