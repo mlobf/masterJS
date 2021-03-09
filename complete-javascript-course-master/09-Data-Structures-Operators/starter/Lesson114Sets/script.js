@@ -19,4 +19,8 @@ for (const order of orderSet) console.log(order);
 // The main use case of set is remove duplicates of arrays
 const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
 const newStaff = new Set(staff);
-console.log(newStaff);
+console.log(newStaff.size);
+// Converting to array
+const newStaffArray = [...newStaff];
+console.log(newStaffArray);
+console.log(newStaffArray);
