@@ -73,21 +73,22 @@ for (let i = 0; i < enter.length; i++) {
   //console.log(`Goal ${i}: ${enter[i + 1]}`);
 }
 
+//1. Loop over the game.scored array and print each player name
+//  to the console, along with the goal number (Example: "Goal 1: Lewandowski")
+//console.log(`Goal ${i}: ${player}`);
+
 //2. Use a loop to calculate the average odd and
 //    log it to the console (We already studied how to calculate
 //    averages, you can go check if you don't remember)
 //console.log(game.odds);
 // Average =
-//console.log((1.33 + 3.25 + 6.5)/3)
-const odds = Object.values(game.odds);
-let avg = 0;
-for (const odd in odds) avg += odd;
-avg /= odds.length;
-//console.log(avg);
+//for (const [i, player] of game.scored.entries())
+//console.log((1.33 + 3.25 + 6.5) / 3);
 
-// 3-)
-for (const [team, odd] of Object.entries(game.odds)) {
-  console.log(team, odd);
-  //console.log(`Odd of `);
-  console.log(`Odd of victory Bayern Munich: 1.33`);
+let avg = 0;
+for (const odd of Object.values(game.odds)) {
+  avg += odd;
 }
+const odd = Object.values(game.odds);
+avg /= odd.length;
+// 3-)

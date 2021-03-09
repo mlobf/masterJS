@@ -38,6 +38,7 @@ const restaurant = {
     );
   },
 };
+
 console.log('------- BEG +++++++++');
 
 console.log(restaurant);

@@ -52,15 +52,15 @@ const restaurant = {
 };
 
 // NULLISH COALESCING OPERATOR
-
+// ?? Ele nao releva se o valor e Falsy, levando a negaçao somente se for undefined ou null
 //let restaurant.numGuests = 10;
 //const guests = restaurant.numGuests || 10; // Zero is Falsy value
 //console.log(guests);
 
 // Nullish: null and undefined
 //const restaurant.numGuests = 100
-const guestCorrect = restaurant.numGuests ?? 10; // Does not work on Node.js
-console.log(guestCorrect);
+//const guestCorrect = restaurant.numGuests ?? 10; // Does not work on Node.js
+//console.log(guestCorrect);
 
 //console.log(3 || 'Jonas');
 
@@ -87,6 +87,8 @@ console.log(undefined || 0 || '' || 'Hello' || 23 || null); // The First truthy 
 //console.log(guest2);
 
 //console.log('----------------- AND ----------------------');
-//console.log(0 && 'Jonas'); // The and operator && short circuits when the first value is Falsy
+//console.log(0 && 'Jonas'); // The And operator && short circuits when the first value is Falsy
 //console.log(7 && 'Jonas'); // The AND operator is true only if all operands are true
 //console.log('Hello' && 23 && null && 'Jonas');
+const { ...name } = Object.values(restaurant); // Works on Node
+console.log(name[6]);

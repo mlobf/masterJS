@@ -4,7 +4,7 @@ const weekDays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
 const openHours = {
   [weekDays[0]]: {
-    open: 12,
+    open: 10,
     close: 22,
   },
   [weekDays[4]]: {
@@ -47,18 +47,20 @@ const restaurant = {
 
 const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
+//
 for (const day of days) {
   //console.log(day);
+  // Visa executar sem dar erro o operador ?. Assim nao aparece undefined
   const open = restaurant.openHours[day]?.open ?? 'closed';
   //console.log(`On ${day} we open at ${open}`);
 }
 
 // Using optional chaining on Methods
-//console.log(restaurant.orderDelivery?.(1, 1) ?? 'Method does not exist ');
-//console.log(restaurant.orderRissoto?.(0, 1) ?? 'Method does not exist ');
+//console.log(restaurant.orderDelivery?.(1, 1) ?? 'Method does not exist '); Nesta da Acerto
+//console.log(restaurant.orderRissoto?.(0, 1) ?? 'Method does not exist '); // Neste da erro.
 
 // Using even on arrays
 // Check if this arrays is empty
-const users = [{ name: 'Jonas' }, { email: 'hello@gmail.com' }, { age: 38 }];
+//const users = [{ name: 'Jonas' }, { email: 'hello@gmail.com' }, { age: 38 }];
 
-console.log(users[0]?.name ?? 'This dude does not exist');
+//console.log(users[0]?.name ?? 'This dude does not exist');
