@@ -2,6 +2,8 @@
 
 // New Data Structure
 // Maps
+// Can use any data structure as key
+// otherwise, Objects can use only strings
 
 console.log('--------------- BEG --------------------');
 
@@ -17,10 +19,12 @@ rest
   .set('close', 23)
   .set(true, 'We are open')
   .set(false, 'We are closed');
+
 // To create a arr as key, first you must create a const arr and use this arr
 //    as key to a new Map element
 const arr = [1, 2];
 rest.set(arr, 'Test');
+
 // Using a Object as Key on Map
 rest.set(document.querySelector('h1'), 'Heading');
 

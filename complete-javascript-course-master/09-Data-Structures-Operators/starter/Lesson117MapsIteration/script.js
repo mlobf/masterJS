@@ -26,27 +26,28 @@ const question = new Map([
   [false, 'Try again'],
 ]);
 
-//console.log(question);
+console.log(question);
 
 // Easy way to convert Object to Map
 //const hourMap = new Map(Object.entries(openHours));
 //console.log(hourMap);
 // Quiz App
 // Iteration on Maps
-/*
+
 for (const [key, value] of question) {
   if (typeof key === 'number') {
     console.log(`Answer ${key} : ${value}`);
   }
 }
-*/
+
 const answer = Number(prompt('Your answer is ...'));
+
 if (answer === 3) {
   console.log('You Win');
 } else {
   console.log('You Lose');
 }
-//console.log(question.get(question.get(3) === answer));
+console.log(question.get(question.get(3) === answer));
 
 // Convert Map to Array
 console.log([...question]);
