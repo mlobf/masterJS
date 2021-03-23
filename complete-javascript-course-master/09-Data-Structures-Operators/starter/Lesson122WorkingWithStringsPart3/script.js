@@ -10,9 +10,17 @@ const newName = ['Mr', firstName, lastName.toUpperCase()].join(' ');
 
 console.log(newName);
 
+// Great Use Case for all Stings Methods
 const capitalizeName = function (name) {
-  
-  const capName = name.toUpperCase();
-  return console.log(capName);
+  const names = name.split(' ');
+  const namesUpper = [];
+
+  for (const n of names) {
+    namesUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(namesUpper.join(' '));
 };
-capitalizeName('marcos');
+
+capitalizeName('marcos leme de oliveira');
+capitalizeName('lin de oliveira baba');
+capitalizeName('joao augusto prado caldeira');
