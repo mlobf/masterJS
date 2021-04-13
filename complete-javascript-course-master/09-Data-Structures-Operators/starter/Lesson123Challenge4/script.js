@@ -32,14 +32,22 @@ let final = first + newLast;
 console.log(final);
 */
 
+/* 
+for each element in arr
+must be add a character 
+*/
+
 const resCamel = function (arr) {
+  let myCount = 0;
+  let myMessage = '+';
   let result = [];
   for (let a of arr) {
     let newTestVar = a.toLocaleLowerCase().replace('_', ' '); // LowerCase and Replace '_'
     let splitVar = newTestVar.split(' ');
     let [first, last] = splitVar;
     let newLast = last.replace(last[0], last[0].toUpperCase());
-    let final = first + newLast;
+    let final = first + newLast + ' ' + myMessage.repeat(myCount);
+    myCount = myCount + 1;
 
     result.push(final);
   }

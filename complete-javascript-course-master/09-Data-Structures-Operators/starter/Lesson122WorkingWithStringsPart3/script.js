@@ -79,4 +79,4 @@ const planesInLine = n => {
   console.log(`There are ${n} planes in line `.repeat(n));
 };
 
-//planesInLine(5);
+planesInLine(5);
