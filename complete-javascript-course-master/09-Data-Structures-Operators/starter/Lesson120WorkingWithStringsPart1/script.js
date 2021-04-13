@@ -6,35 +6,41 @@
 const airline = 'TAP Air Portugal';
 const plane = 'A320';
 
-console.log(plane[0]);
+console.log('Part 1');
+console.log(' ');
+
+console.log(plane[0]); // 'A'
 console.log(plane[1]);
 console.log(plane[2]);
 console.log(plane[3]);
 
-console.log('');
+//console.log('');
 
-console.log('B737'[0]);
+console.log('=>', 'B737'[0]); // '=> B'
 
-console.log('');
+//console.log('');
 
 console.log(plane.length);
 console.log('B737'.length);
 
-console.log('');
+//console.log('');
 
-console.log(airline.indexOf('r'));
-console.log(airline.lastIndexOf('r'));
+console.log('=> indexOf', airline.indexOf('r')); // => indexOf 6
+console.log(airline.lastIndexOf('r')); // show  the position the last occurrence of r positions
 
-console.log(airline.indexOf('Portugal'));
+//const airline = 'TAP Air Portugal';
+console.log('indeOf Portugal');
+console.log(airline.indexOf('Portugal')); // Show the Position that starts some specif word
 
 // Slice Method
 //  -> To extract part of a string...
-
-console.log(airline.slice(4, 10)); // All theses methods return new strings.
+console.log('->');
+console.log(airline.slice(4, 10)); // All theses methods return new strings. -> Air Po
 
 // Vem Nasa Vem
 // Now this is how we use the real propose of .inderOf/.lastIndexOf/.slice
-
+console.log('------------- ');
+console.log(' Now a real example');
 console.log(airline.slice(0, airline.indexOf(' ')));
 
 console.log(airline.slice(airline.lastIndexOf(' ')));

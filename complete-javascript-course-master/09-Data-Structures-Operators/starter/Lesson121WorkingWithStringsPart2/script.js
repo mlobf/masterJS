@@ -2,6 +2,8 @@
 
 const airline = 'TAP Air Portugal';
 
+console.log('Part 2');
+
 console.log('');
 
 console.log(airline.toLocaleLowerCase());

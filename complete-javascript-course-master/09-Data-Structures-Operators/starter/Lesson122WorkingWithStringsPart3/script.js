@@ -2,10 +2,13 @@
 
 // Will generate a arr where each element is separated by +
 
+console.log('Part 3');
+console.log('  ');
+
 const arr = [];
 //strange+string+now'.split('+')); // The element '+' is used  to create each new arr element another arr
 const x = 'Marcos Leme'.split(' ');
-//console.log(x);
+console.log(x);
 
 //console.log(typeof arr);
 //const [firstName, lastName] = 'Marcos Leme'.split(' ');
