@@ -21,13 +21,29 @@ const myList = [
 //      letter and the other part will be the rest of the letters
 // 6 - At lastName, make the firstLetter UpperCase and join at lastName
 
+/*
 let testVar = 'thisIs_TheEnd';
-
 let newTestVar = testVar.toLocaleLowerCase().replace('_', ' '); // LowerCase and Replace '_'
-// create Two Variables
 let splitVar = newTestVar.split(' ');
 let [first, last] = splitVar;
 let newLast = last.replace(last[0], last[0].toUpperCase());
 let final = first + newLast;
 
 console.log(final);
+*/
+
+const resCamel = function (arr) {
+  let result = [];
+  for (let a of arr) {
+    let newTestVar = a.toLocaleLowerCase().replace('_', ' '); // LowerCase and Replace '_'
+    let splitVar = newTestVar.split(' ');
+    let [first, last] = splitVar;
+    let newLast = last.replace(last[0], last[0].toUpperCase());
+    let final = first + newLast;
+
+    result.push(final);
+  }
+  return console.log(result);
+};
+
+resCamel(myList);
