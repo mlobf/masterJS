@@ -33,7 +33,7 @@ const capitalizeName = function (name) {
 
 //console.log('------------------------');
 
-//capitalizeName('marcos leme de oliveira');
+capitalizeName('marcos leme de oliveira');
 //capitalizeName('lin de oliveira baba');
 //capitalizeName('joao augusto prado caldeira');
 
@@ -50,7 +50,7 @@ const message = 'Go to gate 23!';
 
 //console.log('Jonas'.padEnd(25, ' +'));
 // Now mixing Start and End
-console.log('Jonas'.padStart(25, ' +').padEnd(50, ' +'));
+//console.log('Jonas'.padStart(25, ' +').padEnd(50, ' +'));
 
 // Challenge, print a credit card number showing only the first four numbers
 //    the other characters must appear as '*'.
@@ -64,11 +64,11 @@ const maskCreditCard = function (number) {
 };
 
 // Showing the number
-console.log(maskCreditCard(myCreditCardNumber));
+//console.log(maskCreditCard(myCreditCardNumber));
 
 // The Repeat method
 const message2 = 'Bad Weather .... All Departures Delays';
-console.log(message.repeat(10));
+//console.log(message.repeat(10));
 
 // function planesInLine
 
@@ -76,4 +76,4 @@ const planesInLine = n => {
   console.log(`There are ${n} planes in line `.repeat(n));
 };
 
-planesInLine(5);
+//planesInLine(5);
