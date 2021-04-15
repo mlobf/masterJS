@@ -17,3 +17,5 @@ const createBooking = (
 };
 createBooking('LH123');
 createBooking('AC120', 1000, 1200);
+
+createBooking('AC120', 1000, 1200);
