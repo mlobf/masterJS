@@ -10,8 +10,8 @@ const checkIn = (flightNumber, passenger) => {
   flightNumber = 'MAR8181';
   passenger.name = 'Mr' + passenger.name;
 
-  if (passenger.passport === 15342342521382451) {
-    console.log('Check In ');
+  if (passenger.passport === marcos.passport) {
+    console.log(`Check in at ${flightNumber}`);
   } else {
     console.log('Wrong passaport');
   }
@@ -23,10 +23,12 @@ console.log(flight);
 console.log(marcos);
 
 console.log('-----Before NewPassaport----');
+
 const newPassaport = person => {
   person.passport = Math.trunc(Math.random() * 10000000000000);
 };
 console.log('----------');
+
 newPassaport(marcos);
 
 checkIn(flight, marcos);

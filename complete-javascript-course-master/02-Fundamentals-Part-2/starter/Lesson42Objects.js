@@ -17,4 +17,4 @@ const jonas = {
 	job: "teacher",
 	friends: ["Michel", "Peter", "Steven"],
 };
-console.log(jonas);
+console.log(jonas['firstName']);
