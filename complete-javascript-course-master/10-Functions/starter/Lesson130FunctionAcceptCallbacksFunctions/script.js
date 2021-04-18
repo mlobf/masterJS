@@ -1,0 +1,21 @@
+'use strict';
+
+const oneWord = function (str) {
+  return str.replace(/ /g, '').toLowerCase();
+};
+
+const name = 'Marcos Leme De Oliveira Borba Filho';
+
+console.log(oneWord(name));
+
+const upperFirstWord = function (str) {
+  const [first, ...other] = str.split(' ');
+  return [first.toUpperCase(), ...other].join('');
+};
+
+// Higher Order function
+const transformer = function (str, fn) {
+  console.log(`Transform string: ${fn(str)}`);
+};
+
+transformer('JavaScript is the Best!!', upperFirstWord);
