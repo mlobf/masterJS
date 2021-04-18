@@ -3,10 +3,9 @@
 const oneWord = function (str) {
   return str.replace(/ /g, '').toLowerCase();
 };
+const myName = 'Marcos Leme De Oliveira Borba Filho';
 
-const name = 'Marcos Leme De Oliveira Borba Filho';
-
-console.log(oneWord(name));
+//console.log(oneWord(myName));
 
 const upperFirstWord = function (str) {
   const [first, ...other] = str.split(' ');
