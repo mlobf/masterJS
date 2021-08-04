@@ -14,7 +14,7 @@ console.log(Boolean({}));
 
 const money = 0;
 if (money) {
-	console.log("Dont spend it all");
+  console.log("Dont spend it all");
 } else {
-	console.log("You should get a job");
+  console.log("You should get a job");
 }

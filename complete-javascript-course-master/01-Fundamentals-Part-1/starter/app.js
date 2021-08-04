@@ -111,29 +111,20 @@ const daysToLearnReactNative1 = 39 / 4;
 
 console.log("   ");
 console.log(
-	"Time to Learn JS  " +
-		(daysToCompleteJsAdvanced +
-			daysToCompleteJsDataStructures +
-			daysToCompleteJsMasterCourse)
+  "Time to Learn JS  " +
+    (daysToCompleteJsAdvanced +
+      daysToCompleteJsDataStructures +
+      daysToCompleteJsMasterCourse)
 );
 console.log("   ");
 console.log(
-	"Time to Learn Node  " +
-		(daysToCompleteNodeComplete +
-			daysToCompleteNodeMaster +
-			daysToCompleteNodeMosh)
+  "Time to Learn Node  " +
+    (daysToCompleteNodeComplete +
+      daysToCompleteNodeMaster +
+      daysToCompleteNodeMosh)
 );
 console.log("   ");
 console.log(
-	"Time to Learn React  " +
-		(daysToLearnReact + daysToLearnReactNative + daysToLearnReactNative1)
+  "Time to Learn React  " +
+    (daysToLearnReact + daysToLearnReactNative + daysToLearnReactNative1)
 );
-
-
-
-
-
-
-
-
-

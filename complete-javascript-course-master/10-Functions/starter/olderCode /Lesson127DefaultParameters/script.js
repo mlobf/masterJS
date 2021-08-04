@@ -15,7 +15,7 @@ const createBooking = (
   console.log(booking);
   bookings.push(booking);
 };
+
 createBooking('LH123');
 createBooking('AC120', 1000, 1200);
-
 createBooking('AC120', 1000, 1200);
