@@ -13,6 +13,8 @@ const Person = function (firstName, birthYear) {
   // };
 };
 
+
+// Just a test
 const jonas = new Person('Jonas', 1991);
 console.log(jonas);
 
