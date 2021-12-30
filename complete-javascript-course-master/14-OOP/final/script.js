@@ -13,7 +13,6 @@ const Person = function (firstName, birthYear) {
   // };
 };
 
-
 // Just a test
 const jonas = new Person('Jonas', 1991);
 console.log(jonas);
@@ -60,7 +59,6 @@ console.log(jonas.species, matilda.species);
 console.log(jonas.hasOwnProperty('firstName'));
 console.log(jonas.hasOwnProperty('species'));
 
-
 ///////////////////////////////////////
 // Prototypal Inheritance on Built-In Objects
 console.log(jonas.__proto__);
@@ -82,13 +80,8 @@ Array.prototype.unique = function () {
 
 console.log(arr.unique());
 
-
-
 //const h1 = document.querySelector('h1');
 ///console.dir(x => x + 1);
-
-
-
 
 ///////////////////////////////////////
 // Coding Challenge #1
@@ -654,5 +647,4 @@ rivian
 console.log(rivian.speedUS);
 */
 
-
-;
+// Another tests using VSCODE
