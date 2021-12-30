@@ -35,7 +35,14 @@ const getJSON = function (url, errorMsg = 'Something went wrong') {
   });
 };
 
+// Outro teste
+
 /*
+
+
+
+
+
 ///////////////////////////////////////
 // Our First AJAX Call: XMLHttpRequest
 
