@@ -19,3 +19,6 @@ git config --global user.email "marcoslemeborbafilho@gmail.com"
 
 git config --global user.name "mlobf"
 */
+
+// teste via vs
+
