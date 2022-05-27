@@ -2,7 +2,13 @@
 
 // Tip
 // Strings are also zero index based
-
+//
+//
+//
+const soma = function(){
+    console.log('oi oi o oii')
+}
+//
 const airline = 'TAP Air Portugal';
 const plane = 'A320';
 
